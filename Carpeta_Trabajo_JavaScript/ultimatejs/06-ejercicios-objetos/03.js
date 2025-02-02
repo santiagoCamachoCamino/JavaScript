@@ -29,7 +29,8 @@ function similares(obj1, obj2){
     }
     /**
      * En caso de que un valor sea disitno, esto nos da entender que 
-     * ya no son iguales, por lo que seria falsey aplicamos un not
+     * ya no son iguales, por lo que seria falsey aplicamos un not, para que
+     * devuelve lo que queremos
      */
     return !distintos;
 }
