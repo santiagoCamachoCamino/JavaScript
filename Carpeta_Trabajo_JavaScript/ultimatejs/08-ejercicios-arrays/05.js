@@ -11,7 +11,7 @@ const usuarios=[
 //     console.log(mayor);
 //    for( let u of usr){
 //     console.log(u.edad)
-//     if(u.edad > mayor){
+//     if(u.edad > mayor){ 
 //         mayor = u.edad
 //         usuarioMayor=u;
 //     }
@@ -29,14 +29,13 @@ const usuarios=[
 //  */
 // }
 
-
-const obtenerMayor= usuarios.reduce((accu, elemento)=>{
+function obtenerMayor(usr){
     if(accu.edad < elemento.edad){
         accu=elemento;
     }
     return accu;
-    
-},usuarios[0]);
-// const mayor = obtenerMayor(usuarios);
-console.log(obtenerMayor);
+}
+
+const mayor = obtenerMayor(usuarios);
+console.log(mayor);
 
