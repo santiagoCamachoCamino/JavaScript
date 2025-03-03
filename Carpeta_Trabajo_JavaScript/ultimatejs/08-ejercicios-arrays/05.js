@@ -29,18 +29,14 @@ const usuarios=[
 //  */
 // }
 
-function obtenerMayor(usr){
-    let mayor = usr[0];
 
-    usr.reduce((accu, elemento)=>(
-        if()
-
-        {
-        
-        
-    }),{})
-}
-
-const mayor = obtenerMayor(usuarios);
-console.log(mayor);
+const obtenerMayor= usuarios.reduce((accu, elemento)=>{
+    if(accu.edad < elemento.edad){
+        accu=elemento;
+    }
+    return accu;
+    
+},usuarios[0]);
+// const mayor = obtenerMayor(usuarios);
+console.log(obtenerMayor);
 
