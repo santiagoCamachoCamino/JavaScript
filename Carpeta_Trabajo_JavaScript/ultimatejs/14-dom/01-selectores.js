@@ -76,3 +76,7 @@ let nuevoP=document.createElement('p');
 document.body.append(nuevoP);
 
 console.log(pLive, pStatic);
+// HTMLCollection(5) [p, p.red, p.red, p.blue, p, chanchito: p.blue] 
+/*Aquí solo el HTMLCollection nos muestra el nuevo elemento que agregamos */
+/*Si queremos verlo en el NodeList tendriamos que hacer otro querySelctor */
+// NodeList(4) [p, p.red, p.red, p.blue]
